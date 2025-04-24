@@ -25,6 +25,7 @@ if berat_badan:
     ax.set_title('Visualisasi Kebutuhan Protein Harian')
     st.pyplot(fig)
 
+
 if usia <1:
     return"Data usia tidak tersedia dalam AKG"
 elif 1 <= usia <= 8:
@@ -32,8 +33,10 @@ elif 1 <= usia <= 8:
 elif 9 <= usia <= 13:
     return 34
 elif 14 <= usia <= 18:
-    return 46 is jenis_kelamin.lower() == 'perempuan' else 52
+    if jenis_kelamin.lower() == 'perempuan':
+        return 46
 elif usia >= 19:
-    return 46 is jenis_kelamin.lower() == 'perempuan' else 56
+    if jenis_kelamin.lower() == 'perempuan':
+        return 56
 else:
     return "Data tidak valid."
