@@ -27,7 +27,7 @@ if berat_badan:
 
 
 if usia <1:
-    return"Data usia tidak tersedia dalam AKG"
+    elif "Data usia tidak tersedia dalam AKG"
 elif 1 <= usia <= 8:
     return 19
 elif 9 <= usia <= 13:
