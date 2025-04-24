@@ -38,5 +38,5 @@ elif 14 <= usia <= 18:
 elif usia >= 19:
     if jenis_kelamin.lower() == 'perempuan':
         return 56
-    else:
-        print "Data tidak valid."
+else:
+    return"Usia tidak valid."
