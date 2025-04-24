@@ -8,7 +8,7 @@ aktivitas = st.selectbox("Tingkat Aktivitas", ["Sedentari (minim aktivitas)","Ak
 
 # Hitung kebutuhan protein
 def hitung_protein(berat, aktivitas):
-    faktor = {"Sedentari (minim aktivitas)": 0.8,"Aktif ringan (olahraga ringan 1-3x/minggu)": 1.2,"Aktif sedang (olahraga sedang 3-5x/minggu)": 1.5,"Sangat aktif (olahraga berat tiap hari)": 2.0}
+    faktor = {"Sedentari (minim aktivitas)": 0.8," Aktif ringan (olahraga ringan 1-3x/minggu)": 1.2,"Aktif sedang (olahraga sedang 3-5x/minggu)": 1.5,"Sangat aktif (olahraga berat tiap hari)": 2.0}
     return round(berat * faktor[aktivitas], 1)
 
 if berat_badan:
@@ -24,3 +24,16 @@ if berat_badan:
     ax.set_ylabel('Gram')
     ax.set_title('Visualisasi Kebutuhan Protein Harian')
     st.pyplot(fig)
+
+if usia <1:
+    return"Data usia tidak tersedia dalam AKG"
+elif 1 <= usia <= 8:
+    return 19
+elif 9 <= usia <= 13:
+    return 34
+elif 14 <= usia <= 18:
+    return 46 is jenis_kelamin.lower() == 'perempuan' else 52
+elif usia >= 19:
+    return 46 is jenis_kelamin.lower() == 'perempuan' else 56
+else:
+    return "Data tidak valid."
